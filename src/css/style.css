@@ -82,7 +82,7 @@ nav {
 }
 
 .featur {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .fotka {
@@ -131,41 +131,77 @@ nav {
 }
 
 .featur {
-    padding-top: 32px;
+    margin-top: 30px;
+
 }
 
+.nout2 {
+    float: left;
+    margin-left: 860px;
+
+}
 
 .nout1 {
     float: left;
     width: 211px;
     text-align: center;
+    margin-top: 100px;
 
 }
-.nout1 nout2 {
-    float: left;
-    margin-left: 500px;
-}
 
-znak1 {
-    float: left;
-    width: 211px;
-    text-align: center;
+.nout1 h3 {
+    color: #cf7600;
+    font-size: 16px;
+    padding: 30px 0px 15px 0px;
 }
 
 
-raketa1 {
+.znak1 {
     float: left;
     width: 211px;
     text-align: center;
+    margin-top: 100px;
+    margin-left: 90px;
+
+
+}
+
+.znak1 h3 {
+    color: #cf7600;
+    font-size: 16px;
+    padding: 30px 0px 15px 0px;
+}
+
+
+.raketa1 {
+    float: left;
+    width: 211px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 90px;
+
+}
+
+.raketa1 h3 {
+    color: #cf7600;
+    font-size: 16px;
+    padding: 30px 0px 15px 0px;
 }
 
 .gramofon1 {
     float: left;
     width: 211px;
     text-align: center;
+    margin-top: 100px;
+    margin-left: 90px;
+
 }
 
-
+.gramofon1 h3 {
+    color: #cf7600;
+    font-size: 16px;
+    padding: 30px 0px 15px 0px;
+}
 
 .Cases {
     width: 100%;
@@ -182,7 +218,7 @@ raketa1 {
 }
 
 .featur {
-    padding-top: 16px;
+    margin-top: 30px;
 }
 
 .caasestext {
@@ -193,18 +229,88 @@ raketa1 {
     padding: 40px 200px 0px 300px;
 }
 
-.client {
-
-    padding: 40px 1450px 0px 390px;
+.client2 {
+    float: left;
+    margin-left: 390px;
 }
 
-.nameproject {}
+.client {
+    float: left;
+    text-align: center;
+    width: 210px;
+    margin-left: 700px;
+    margin-top: 50px;
+}
 
-.website {
-    padding: 40px 1450px 0px 390px;
+.nameproject {
+    float: left;
+    text-align: center;
+    width: 850px;
+    margin-left: 100px;
+    margin-top: 50px;
+
+}
+
+.costcalculation {
+
+    text-align: center;
+    width: 100%;
+    height: 750px;
+    padding-top: 190px;
+}
+
+.costcalculation h2 {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.costcalculation h3 {
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 900px;
+
+    margin-top: 50px;
+    height: 25px;
+    width: 145px;
+}
+
+.tabl {
+
+    margin-top: 20px;
+    width: 900px;
+    height: 60px;
+    border: 1px solid #000;
+    margin-left: 170px;
+    background-color: #edeff1;
+}
+
+.statistika {
+    text-align: left;
+    margin-top: 100px;
+}
+
+.statistika h6 {
+    font-size: 25px;
+    margin-left: 910px;
+    margin-top: 160px;
+    word-spacing: 400px;
+
+
+}
+
+.statistika p {
+    font-size: 25px;
+    text-align: end;
+    margin-right: 730px;
+    margin-top: -60px;
+    word-spacing: 20px;
 }
 
 .SomeStatistics {
+    margin-top: -150px;
     width: 100%;
     height: 500px;
     text-align: center;
@@ -212,15 +318,106 @@ raketa1 {
 }
 
 .SomeStatistics h2 {
+    text-align: center;
     padding-top: 110px;
     height: 22px;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     color: #263244;
 }
 
 .featur {
-    padding-top: 32px;
+    margin-top: 30px;
+}
+
+.smile2 {
+    float: left;
+    margin-left: 650px;
+}
+
+.smile {
+    margin-top: 90px;
+    float: left;
+    width: 160px;
+}
+
+.smile h4 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #323e4f;
+    margin-top: 20px;
+}
+
+.smile p {
+    margin-top: 20px;
+    color: #323e4f;
+    font-weight: 700;
+    white-space: nowrap;
+
+}
+
+.skobki {
+    margin-left: 200px;
+    margin-top: 90px;
+    float: left;
+    width: 160px;
+
+}
+
+.skobki h4 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #323e4f;
+    margin-top: 20px;
+}
+
+.skobki p {
+    margin-top: 20px;
+    color: #323e4f;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.galochka {
+    margin-top: 90px;
+    float: left;
+    width: 160px;
+    margin-left: 200px;
+}
+
+.galochka h4 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #323e4f;
+    margin-top: 20px;
+}
+
+.galochka p {
+    margin-top: 20px;
+    color: #323e4f;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.kubok {
+    margin-top: 90px;
+    float: left;
+    width: 160px;
+    margin-left: 200px;
+}
+
+.kubok h4 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #323e4f;
+    margin-top: 20px;
+}
+
+.kubok p {
+    margin-top: 20px;
+    color: #323e4f;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .Reviews {
@@ -238,56 +435,84 @@ raketa1 {
 }
 
 .featur {
-    padding-top: 16px;
+    margin-top: 30px;
 }
 
 .fotkaotziv {
     padding-top: 55px;
 }
 
-.Reviews p {
-    padding-top: 35px;
+.fish {
+    margin-top: 35px;
+    margin-left: 900px;
+    width: 700px;
+}
+
+.fish p {
+    margin-top: 25px;
 }
 
 .MyContacts {
     width: 100%;
     height: 810px;
     text-align: center;
-    background: url(../img/contacs.png);
+    background: url(../img/tea.jpg);
 }
 
 .MyContacts h2 {
-    height: 22px;
-    font-size: 25px;
+
+    font-size: 35px;
     font-weight: 600;
     padding-top: 105px;
     color: #fff;
 }
 
 .featur {
-    padding-top: 32px;
+    margin-top: 30px;
 }
 
-.MyContacts span {
+.contacs {
     color: #fff;
-    padding-top: 70px;
+    margin-top: 20px;
+}
+
+.geo2 {
+    float: left;
+    margin-left: 650px;
 }
 
 .geo {
+    float: left;
+    width: 100px;
+    text-align: center;
     color: #fff;
 
 }
 
 .konver {
     color: #fff;
+    float: left;
+    width: 100px;
+    text-align: center;
+    
+
 }
 
 .truba {
     color: #fff;
+    float: left;
+    width: 100px;
+    text-align: center;
+    
+
 }
 
 .message {
     text-align: center;
+}
+
+.karta {
+    width: 100%;
 }
 
 footer {
