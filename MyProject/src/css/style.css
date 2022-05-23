@@ -1,11 +1,24 @@
 body {
     font-family: Arial, sans-serif;
 }
-
+.loader{
+    height: 50px;
+    width: 50px;
+    border: 10px solid rgba(209, 119, 0, 0.6);
+    border-radius: 50%;
+    border-left-color: #d17700;
+    animation: loader 3s linear;
+}
+@keyframes loader{
+    100%{
+        transform: rotate(360deg);
+    }
+}
 nav {
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
 
 .logo {
@@ -14,12 +27,35 @@ nav {
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s;
 }
 
 .menu {
     float: left;
     padding-left: 432px;
 
+}
+
+.menu li a:visited {
+    color: white;
+}
+
+.menu li a:hover {
+    color: #d17700;
+
+}
+
+.menu li a:active {
+    transform: scale(1.1);
+}
+
+.menu li a {
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
 }
 
 .menu li {
@@ -29,11 +65,44 @@ nav {
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 0.4s
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 0.8s
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 1.2s
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 1.6s
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 2s
+}
+
+
+
+
 
 .main {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
 }
 
@@ -42,6 +111,13 @@ nav {
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .title__conteiner h1 {
@@ -56,6 +132,21 @@ nav {
 }
 
 .title__conteiner input {
+    transition: all 0.2s;
+    transform: scale(1);
+
+}
+
+.title__conteiner input:hover {
+    background: #344051;
+    color: #fff;
+}
+
+.title__conteiner input:active {
+    transform: scale(1.1);
+}
+
+.title__conteiner input {
     height: 40px;
     text-align: center;
     border: 2px solid #6d7682;
@@ -65,6 +156,40 @@ nav {
     font-size: 13px;
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
+}
+
+@keyframes comming {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes topshift {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes titlemove {
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 404px;
+    }
 }
 
 .AboutMe {
@@ -79,24 +204,75 @@ nav {
     font-weight: 600;
     margin-top: 70px;
     color: #263244;
+
+    -webkit-animation: aboutme 5s ease forwards;
+    -o-animation: aboutme 5s ease forwards;
+    animation: aboutme 5s ease forwards;
+    
+
 }
 
 .featur {
     margin-top: 30px;
+     
+    -webkit-animation: aboutme 3s ease forwards;
+    -o-animation: aboutme 3s ease forwards;
+    animation: aboutme 3s ease forwards;
 }
 
-.fotka {
-    margin-top: 40px;
+@keyframes aboutme {
+    from {
+        opacity: 0;
+        
+    }
+
+    to {
+        opacity: 1;
+
+    }
 }
+@keyframes fotka{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+       opacity: 1;
+         
+    }
+}
+.fotka {
+    
+    
+    -webkit-animation: fotka 5s ease-in forwards;
+    -o-animation: fotka 5s ease-in forwards;
+    animation:fotka 5s ease-in forwards;
+    margin-top: 40px;
+    
+    
+}
+
+
+
 
 .text1 {
 
     margin: 20px 396px 0px 396px;
+     
+    -webkit-animation: fotka 5s ease-in forwards;
+    -o-animation: fotka 5s ease-in forwards;
+    animation:fotka 5s ease-in forwards;
+    margin-top: 40px;
 
 }
 
 .text1_1 {
     margin-top: 30px;
+     
+    -webkit-animation: fotka 5s ease-in forwards;
+    -o-animation: fotka 5s ease-in forwards;
+    animation:fotka 5s ease-in forwards;
+    margin-top: 40px;
 }
 
 .AboutMe input {
@@ -109,7 +285,28 @@ nav {
     height: 33px;
     background: url(../img/icon.png) no-repeat;
     background-position: 5% 50%;
+     
+    -webkit-animation: fotka 5s ease-in forwards;
+    -o-animation: fotka 5s ease-in forwards;
+    animation:fotka 5s ease-in forwards;
+    margin-top: 40px;
+    
 
+}
+.AboutMe input:hover{
+    color: #fff;
+    background-color: #263244;
+}
+.AboutMe input:active{
+    transform: scale(1.1);
+}
+.AboutMe input:visited{
+    color: #d17700;
+}
+
+.AboutMe input:focus{
+    color: #d17700;
+    
 }
 
 .WhatICanDo {
@@ -123,12 +320,15 @@ nav {
 
 .ican {
     padding-top: 70px;
-
     font-weight: 600;
     font-size: 25px;
     color: #263244;
+    -webkit-animation: aboutme 3s ease forwards;
+    -o-animation: aboutme 3s ease forwards ;
+    animation: aboutme 3s ease forwards;
 
 }
+
 
 .featur {
     margin-top: 30px;
@@ -146,6 +346,13 @@ nav {
     float: left;
     width: 211px;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: fotka 5s forwards;
+    -o-animation:fotka 5s forwards;
+    animation:fotka 5s forwards;
+    -webkit-animation-delay:  1s;
+    -o-animation-delay:  1s;
+    animation-delay:  1s;
 
 
 }
@@ -163,6 +370,14 @@ nav {
     text-align: center;
     margin-top: 100px;
     margin-left: 90px;
+    opacity: 0;
+     -webkit-animation: fotka 5s forwards;
+    -o-animation:fotka 5s forwards;
+    animation:fotka 5s forwards;
+    
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
 
 
 }
@@ -180,6 +395,13 @@ nav {
     text-align: center;
     margin-top: 100px;
     margin-left: 90px;
+    opacity: 0;
+     -webkit-animation: fotka 5s forwards;
+    -o-animation:fotka 5s forwards;
+    animation:fotka 5s forwards;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 
 }
 
@@ -195,6 +417,13 @@ nav {
     text-align: center;
     margin-top: 100px;
     margin-left: 90px;
+    opacity: 0;
+     -webkit-animation: fotka 5s forwards;
+    -o-animation:fotka 5s forwards;
+    animation:fotka 5s forwards;
+    -webkit-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 
 }
 
@@ -216,18 +445,42 @@ nav {
     font-weight: 600;
     margin-top: 70px;
     color: #263244;
+    -webkit-animation: aboutme 3s ease forwards;
+    -o-animation: aboutme 3s ease forwards ;
+    animation:aboutme 3s ease forwards ;
 }
 
 .featur {
     margin-top: 30px;
 }
 
-.caasestext {
+.caasestext p {
+  
     padding: 100px 0px 150px 0px;
+    opacity: 0;
+    
+     -webkit-animation: aboutme 3s ease forwards;
+    -o-animation: aboutme 3s ease forwards ;
+    animation:aboutme 3s ease forwards ;
+    
 }
 
+@keyframes casesmove {
+    from {
+        opacity: 0;
+        margin-left: -1000px;
+    }
+
+    to {
+        opacity: 1;
+        
+    }
+}
 .casesfon {
     padding: 40px 200px 0px 300px;
+    -webkit-animation: casesmove 4s ease-out;
+    -o-animation: casesmove 4s ease-out;
+    animation: casesmove 4s ease-out;
 }
 
 .client2 {
@@ -236,8 +489,9 @@ nav {
 }
 
 .client {
+    
     float: left;
-    text-align: center;
+    text-align: left;
     width: 210px;
     margin-left: ;
     margin-top: 50px;
@@ -245,16 +499,34 @@ nav {
 
 .client button {
     margin-top: 30px;
+    height: 45px;
+    width: 200px;
+    border-radius: 5%;
+    color: white;
+    background-color: #287e77;
+}
+.client button:hover{
+    color: #d17700;
+    background-color: #344051;
+}
+.client button:active{
+    color: #d17700;
+    background-color: #344051;
+    transform: scale(1.2);
 }
 
 .nameproject {
     float: left;
-    text-align: center;
+    text-align: left;
     width: 850px;
     margin-left: 100px;
     margin-top: 50px;
 
 }
+.nameproject b{
+    font-size: 15px;
+}
+
 
 .costcalculation {
 
@@ -307,10 +579,11 @@ nav {
 }
 
 .statistika p {
+    position: relative;
     font-size: 25px;
     text-align: end;
-    margin-left: 1480px;
-    margin-top: -40px;
+    margin-left: 1490px;
+    margin-top: -20px;
     word-spacing: 20px;
 }
 
@@ -320,14 +593,22 @@ nav {
     height: 500px;
     text-align: center;
     background: url(../img/somestatistics.png);
+    background-attachment: fixed;
+    transform: matrix3d(-1px) ;
+    
+    
 }
 
 .SomeStatistics h2 {
+    
     text-align: center;
     padding-top: 110px;
     font-size: 35px;
     font-weight: 600;
     color: #263244;
+    -webkit-animation: aboutme 3s ease forwards;
+    -o-animation:aboutme 3s ease forwards ;
+    animation: aboutme 3s ease forwards;
 }
 
 .featur {
@@ -343,6 +624,13 @@ nav {
     margin-top: 90px;
     float: left;
     width: 160px;
+    opacity: 0;
+     -webkit-animation: fotka 5s forwards;
+    -o-animation:fotka 5s forwards;
+    animation:fotka 5s forwards;
+    -webkit-animation-delay:  1s;
+    -o-animation-delay:  1s;
+    animation-delay:  1s;
 }
 
 .smile h4 {
@@ -365,6 +653,13 @@ nav {
     margin-top: 90px;
     float: left;
     width: 160px;
+    opacity: 0;
+     -webkit-animation: fotka 5s forwards;
+    -o-animation:fotka 5s forwards;
+    animation:fotka 5s forwards;
+    -webkit-animation-delay:  2s;
+    -o-animation-delay:  2s;
+    animation-delay:  2s;
 
 }
 
@@ -387,6 +682,13 @@ nav {
     float: left;
     width: 160px;
     margin-left: 200px;
+    opacity: 0;
+     -webkit-animation: fotka 5s forwards;
+    -o-animation:fotka 5s forwards;
+    animation:fotka 5s forwards;
+    -webkit-animation-delay:  3s;
+    -o-animation-delay:  3s;
+    animation-delay:  3s;
 }
 
 .galochka h4 {
@@ -408,6 +710,13 @@ nav {
     float: left;
     width: 160px;
     margin-left: 200px;
+    opacity: 0;
+     -webkit-animation: fotka 5s forwards;
+    -o-animation:fotka 5s forwards;
+    animation:fotka 5s forwards;
+    -webkit-animation-delay:  4s;
+    -o-animation-delay:  4s;
+    animation-delay:  4s;
 }
 
 .kubok h4 {
@@ -436,6 +745,9 @@ nav {
     font-weight: 600;
     margin-top: 70px;
     color: #263244;
+    -webkit-animation: aboutme 3s ease forwards;
+    -o-animation:aboutme 3s ease forwards ;
+    animation:aboutme 3s ease forwards ;
 }
 
 .featur {
@@ -444,16 +756,31 @@ nav {
 
 .fotkaotziv {
     margin-top: 55px;
+    animation: heartBeat;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    animation-duration: 5s;
 }
 
 .fish {
     margin-top: 35px;
     margin-left: 600px;
     width: 700px;
+     animation: backInLeft;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+    animation-duration: 5s;
 }
 
 .fish p {
     margin-top: 25px;
+     animation: backInRight;
+    -webkit-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+    animation-duration: 5s;
 }
 
 .MyContacts {
@@ -469,6 +796,9 @@ nav {
     font-weight: 600;
     padding-top: 105px;
     color: #fff;
+    -webkit-animation: aboutme 3s ease forwards;
+    -o-animation: aboutme 3s ease forwards ;
+    animation: aboutme 3s ease forwards ;
 }
 
 .featur {
@@ -487,12 +817,18 @@ nav {
 }
 
 .geo {
+    display: table-column-group;
     margin-right: 100px;
     margin-top: 80px;
     float: left;
     width: 160px;
     text-align: center;
     color: #fff;
+    opacity: 0;
+    -webkit-animation: fotka 5s forwards;
+    -o-animation:fotka 5s forwards;
+    animation:fotka 5s forwards;
+    
 
 }
 
@@ -505,6 +841,7 @@ nav {
     margin-top: 200px;
     text-align: center;
     color: #fff;
+    
 }
 
 .message h4 {
@@ -516,21 +853,38 @@ nav {
 .messageName {
     width: 350px;
     height: 35px;
-    background-color: #d2d6dc;
+    background-color: #d2d6dc; 
+    animation: backInLeft;
+    -webkit-animation-delay: 3s ;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+    animation-duration: 5s ;
 }
 
 .messageEmail {
     margin-left: 30px;
     width: 350px;
     height: 35px;
-    background-color: #d2d6dc;
+    background-color: #d2d6dc;  
+    animation: backInRight;
+    -webkit-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+    animation-duration: 5s ;
 }
-.messageSMS{
+
+.messageSMS {
     margin-top: 15px;
     width: 735px;
     height: 90px;
     background-color: #d2d6dc;
+    animation:backInUp;
+    -webkit-animation-delay: 5s;
+    -o-animation-delay: 5s;
+    animation-delay: 5s;
+    animation-duration: 5s ;
 }
+
 .messageEnd {
     margin-top: 20px;
     color: #fff;
@@ -538,8 +892,19 @@ nav {
     height: 45px;
     background: none;
     border: 2.5px solid #fff;
-    border-radius: 7%;
+    border-radius: 7%;   
 }
+.messageEnd:active{
+    color: #d17700;
+    background-color: #344051;
+    transform: scale(1.2);
+}
+
+.messageEnd:hover{
+    color: #d17700;
+    background-color: #344051;  
+}
+
 
 .message .karta {
     width: 100%;

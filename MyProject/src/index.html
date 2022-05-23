@@ -4,52 +4,62 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Андрей Браун Веб-разработчик</title>
+    <title class="loader">Андрей Браун Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
+
     <header>
         <nav>
             <div class="logo"> Андрей Браун</div>
             <div class="menu">
                 <ul>
                     <li>
-                        Обо мне
+                        <a href="#">Обо мне</a>
+
                     </li>
                     <li>
-                        Услуги
+                        <a href="#"> Услуги</a>
+
                     </li>
                     <li>
-                        Кейсы
+                        <a href="#">Кейсы</a>
+
                     </li>
                     <li>
-                        Прайс
+                        <a href="#">Прайс</a>
+
                     </li>
                     <li>
-                        Отзывы
+                        <a href="#"> Отзывы</a>
+
                     </li>
                     <li>
-                        Контакты
+                        <a href="#">Контакты</a>
+
                     </li>
 
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="main">
-        <div class="title__conteiner">
-            <h1>
-                Привет <br> Я Андрей Браун
-            </h1>
-            <h4>
-                Фулл стек веб-разработчик </h4>
+    <main>
+        <section class="main">
+            <div class="title__conteiner">
+                <h1>
+                    Привет <br> Я Андрей Браун
+                </h1>
+                <h4>
+                    Фулл стек веб-разработчик </h4>
 
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+                <input type="button" value="Обо мне">
+                <input type="button" value="Мои работы">
+        </section>
         </div>
-    </div>
+    </main>
     <div class="AboutMe">
         <h2>
             ОБО МНЕ
@@ -73,7 +83,7 @@
 
         </div>
 
-        <input type="submit" name="submit_btn" value="Скачать резюме">
+        <input type="button" name="submit_btn" value="Скачать резюме">
 
 
     </div>
@@ -88,7 +98,7 @@
 
         <div class="nout1 nout2">
             <img src="../src/img/nout1.png" alt="">
-            
+
             <h3>Веб-дизайн</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos voluptate quibusdam, facere ad, vel quas.</p>
         </div>
@@ -124,17 +134,21 @@
 
 
         <div class="casestext">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos obcaecati, officia voluptatem iusto labore accusamus fugiat numquam.</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quos obcaecati, officia voluptatem iusto labore accusamus fugiat numquam.</p>
         </div>
         <div class="casesfon">
             <img src="../src/img/casesfon.png" alt="">
         </div>
+
         <div class="client client2">
+
             <p>
                 <br>
                 <b>CLIENT:</b> <br>Какая-то компания
             </p>
+
             <address> <br>
+
                 <b>WEBSITE:</b> <br> <a href="http://www.somedomain.com" target="_blank">http://www.somedomain.com</a>
 
                 <br>
@@ -153,6 +167,7 @@
         <div class="costcalculation">
             <h2>Расчет стоимости</h2>
             <form action="#">
+
 
                 <h3>ТИП САЙТА </h3>
                 <select class='tabl' name="type" required="required">
@@ -248,7 +263,9 @@
                 <b>Михаил,</b>Ген директор ПАО "Газпром"
             </p>
         </div>
+        
     </div>
+
 
     <div class="MyContacts">
         <h2>
@@ -269,19 +286,19 @@
         <div class="geo">
             <img src="../src/img/konvert.png" alt="">
 
-            
+
             <p>info@companyname.com</p>
         </div>
 
         <div class="geo">
             <img src="../src/img/truba.png" alt="">
-            
+
             <p> +7 999 999-99-99</p>
         </div>
 
         <div class="message">
             <form action="#">
-                 <h4>Оставьте мне сообщение </h4>
+                <h4>Оставьте мне сообщение </h4>
 
                 <input class="messageName" type="text" name"text_input" value="" placeholder="Имя" required="required">
 
@@ -290,9 +307,8 @@
 
 
                 <br><textarea class="messageSMS" name="message" cols="50" rows="2" placeholder="Сообщение"></textarea>
-
-
-                <br><input class="messageEnd" type="submit" name="submit_btn" value="Отправить">
+                <div <br><input class="messageEnd" type="submit" name="submit_btn" value="Отправить">
+                </div>
 
             </form>
         </div>
