@@ -223,6 +223,57 @@ main {
     }
 }
 
+@media (max-width:1655px) {
+
+    
+
+    .text1 {
+        font-size: 75%;
+        text-align: justify;
+    }
+
+    .AboutMe input {
+        width: 75%;
+        font-size: 75%;
+    }
+}
+
+@media (max-width:1385px) {
+    .text1 {
+        
+        
+        text-align:justify;
+    }
+
+    .text1_1 {
+
+        display: none;
+    }
+
+    .AboutMe input {
+        width: 75%;
+        
+    }
+    
+}
+
+@media (max-width:1285px) {
+    .text1 {
+       
+        width: 50%;
+        font-size: 50%;
+        text-align:justify;
+        
+    }
+     .AboutMe input {
+         margin: inherit;
+        width: 65%;
+        font-size: 65%;
+    }
+}
+
+
+
 
 
 .AboutMe {
@@ -239,9 +290,9 @@ main {
     margin-top: 70px;
     color: #263244;
 
-    -webkit-animation: aboutme 5s ease forwards;
+    /* -webkit-animation: aboutme 5s ease forwards;
     -o-animation: aboutme 5s ease forwards;
-    animation: aboutme 5s ease forwards;
+    animation: aboutme 5s ease forwards; */
 
 
 }
@@ -281,48 +332,39 @@ main {
 .fotka {
 
 
-    -webkit-animation: fotka 5s ease-in forwards;
+    /* -webkit-animation: fotka 5s ease-in forwards;
     -o-animation: fotka 5s ease-in forwards;
     animation: fotka 5s ease-in forwards;
-    margin-top: 40px;
+    margin-top: 40px; */
 
 
 }
 
 
-@media (min-widht:320px) and (max-widht:1655px) {
-    .text1{
-        display: none;
-        
-    }
-    .text1_1 {
-        display: none;
-    }
-    .AboutMe input{
-        display: none;
-    }
 
-}
 
 .text1 {
+
     position: relative;
 
     margin: 20px 550px 0px 600px;
 
-    -webkit-animation: fotka 5s ease-in forwards;
+    /* -webkit-animation: fotka 5s ease-in forwards;
     -o-animation: fotka 5s ease-in forwards;
     animation: fotka 5s ease-in forwards;
-
+ */
 
 }
 
 .text1_1 {
+
     position: relative;
 
-    -webkit-animation: fotka 5s ease-in forwards;
+
+    /*   -webkit-animation: fotka 5s ease-in forwards;
     -o-animation: fotka 5s ease-in forwards;
     animation: fotka 5s ease-in forwards;
-
+*/
 }
 
 .AboutMe input {
@@ -337,9 +379,9 @@ main {
     background: url(../img/icon.png) no-repeat;
     background-position: 5% 50%;
 
-    -webkit-animation: fotka 5s ease-in forwards;
+    /* -webkit-animation: fotka 5s ease-in forwards;
     -o-animation: fotka 5s ease-in forwards;
-    animation: fotka 5s ease-in forwards;
+    animation: fotka 5s ease-in forwards; */
 
 
 
@@ -377,10 +419,10 @@ main {
     font-weight: 600;
     font-size: 25px;
     color: #263244;
-    -webkit-animation: aboutme 3s ease forwards;
+   /* -webkit-animation: aboutme 3s ease forwards;
     -o-animation: aboutme 3s ease forwards;
     animation: aboutme 3s ease forwards;
-
+*/
 }
 
 
@@ -389,102 +431,92 @@ main {
 }
 
 .nout2 {
-
-    float: left;
-    margin-left: 500px;
-
+    
 }
 
 .nout1 {
-    margin-top: 100px;
-    float: left;
-    width: 211px;
-    text-align: center;
-    opacity: 0;
+     
+    display: flex;
+    
+    /* opacity: 0;
     -webkit-animation: fotka 5s forwards;
     -o-animation: fotka 5s forwards;
     animation: fotka 5s forwards;
     -webkit-animation-delay: 1s;
     -o-animation-delay: 1s;
-    animation-delay: 1s;
-
-
+    animation-delay: 1s; */
 }
 
 .nout1 h3 {
     color: #cf7600;
-    font-size: 16px;
-    padding: 30px 0px 15px 0px;
+    display: flex;
+   flex-wrap: wrap;
+   
 }
 
-
 .znak1 {
-    float: left;
-    width: 211px;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 90px;
-    opacity: 0;
+     
+    display: flex;
+    
+    
+   /* opacity: 0;
     -webkit-animation: fotka 5s forwards;
     -o-animation: fotka 5s forwards;
     animation: fotka 5s forwards;
-
     -webkit-animation-delay: 2s;
     -o-animation-delay: 2s;
-    animation-delay: 2s;
-
-
+    animation-delay: 2s; */
 }
 
 .znak1 h3 {
     color: #cf7600;
-    font-size: 16px;
-    padding: 30px 0px 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 
 .raketa1 {
-    float: left;
-    width: 211px;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 90px;
-    opacity: 0;
+     
+    display: flex;
+    
+   /* opacity: 0;
     -webkit-animation: fotka 5s forwards;
     -o-animation: fotka 5s forwards;
     animation: fotka 5s forwards;
     -webkit-animation-delay: 3s;
     -o-animation-delay: 3s;
     animation-delay: 3s;
-
+    */
 }
 
 .raketa1 h3 {
     color: #cf7600;
-    font-size: 16px;
-    padding: 30px 0px 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .gramofon1 {
-    float: left;
-    width: 211px;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 90px;
-    opacity: 0;
+     
+    display: flex;
+   
+   
+    
+   /* opacity: 0;
     -webkit-animation: fotka 5s forwards;
     -o-animation: fotka 5s forwards;
     animation: fotka 5s forwards;
     -webkit-animation-delay: 4s;
     -o-animation-delay: 4s;
     animation-delay: 4s;
-
+    */
 }
 
 .gramofon1 h3 {
     color: #cf7600;
-    font-size: 16px;
-    padding: 30px 0px 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Cases {
