@@ -4,67 +4,122 @@
 <head>
     <meta charset="UTF-8">
 
-    <title class="loader">Андрей Браун Веб-разработчик</title>
+    <title>Андрей Браун Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
     <header>
         <nav>
-            <div class="logo"> Андрей Браун</div>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#">Обо мне</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="logo"> Андрей Браун</div>
+                    </div>
+                    <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Обо мне</a>
 
-                    </li>
-                    <li>
-                        <a href="#"> Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Услуги</a>
 
-                    </li>
-                    <li>
-                        <a href="#">Кейсы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Кейсы</a>
 
-                    </li>
-                    <li>
-                        <a href="#">Прайс</a>
+                                </li>
+                                <li>
+                                    <a href="#">Прайс</a>
 
-                    </li>
-                    <li>
-                        <a href="#"> Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Отзывы</a>
 
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
 
-                    </li>
+                                </li>
 
-                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Навигация
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                                <a class="dropdown-item href=" #">Обо мне</a>
+
+                                </li>
+                                <li>
+                                    <a class="dropdown-item href=" #"> Услуги</a>
+
+                                </li>
+                                <li>
+                                    <a class="dropdown-item href=" #">Кейсы</a>
+
+                                </li>
+                                <li>
+                                    <a class="dropdown-item href=" #">Прайс</a>
+
+                                </li>
+                                <li>
+                                    <a class="dropdown-item href=" #"> Отзывы</a>
+
+                                </li>
+                                <li>
+                                    <a class="dropdown-item href=" #">Контакты</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
         </nav>
     </header>
+    <!-- <div class="loader"></div> */ закрыл класс лоударе что б не мешал -->
     <main>
         <section class="main">
-            <div class="title__conteiner">
-                <h1>
-                    Привет <br> Я Андрей Браун
-                </h1>
-                <h4>
-                    Фулл стек веб-разработчик </h4>
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6 mt-5 pt-5 ">
+                        <div class="title__conteiner mt-5">
+                            <h1>
+                                Привет <br> Я Андрей Браун
+                            </h1>
+                            <h4>
+                                Фулл стек веб-разработчик </h4>
 
-                <input type="button" value="Обо мне">
-                <input type="button" value="Мои работы">
+                            <input type="button" value="Обо мне">
+                            <input type="button" value="Мои работы">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
-        </div>
+
     </main>
     <div class="AboutMe">
         <h2>
             ОБО МНЕ
         </h2>
-        <div class="featur">
+        <div class="featur1">
             <img src="../src/img/featur.png" alt="">
 
         </div>
@@ -92,7 +147,7 @@
         <div class="ican">
             ЧТО Я УМЕЮ
         </div>
-        <div class="featur">
+        <div class="featur2">
             <img src="../src/img/featur.png" alt="">
         </div>
 
@@ -147,7 +202,8 @@
                 <b>CLIENT:</b> <br>Какая-то компания
             </p>
 
-            <address> <br>
+            <address>
+                <br>
 
                 <b>WEBSITE:</b> <br> <a href="http://www.somedomain.com" target="_blank">http://www.somedomain.com</a>
 
@@ -196,14 +252,19 @@
             </form>
         </div>
 
-        <div class="statistika">
-            <output>
+        <div class="statistika statistika2">
 
-                <h6>Сроки<br> Стоимость</h6>
-                <p>0 <br>0 </p>
-            </output>
+            <h4>Сроки</h4>
+            <h4> Стоимость</h4>
+        </div>
+
+        <div class="stoimosti stoimosti2">
+            <h4>0</h4>
+            <h4> 0 </h4>
         </div>
     </div>
+
+
 
     <div class="SomeStatistics">
         <h2>
@@ -263,7 +324,7 @@
                 <b>Михаил,</b>Ген директор ПАО "Газпром"
             </p>
         </div>
-        
+
     </div>
 
 
@@ -319,7 +380,7 @@
 
     <footer>Copyright © 2021 Андрей Браун. Design by Web</footer>
 
-
+    <script src="js/bootstrap.bundle.min.js"> </script>
 </body>
 
 </html>
