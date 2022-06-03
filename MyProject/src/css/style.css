@@ -223,55 +223,25 @@ main {
     }
 }
 
-@media (max-width:1655px) {
 
-    
 
+@media (max-width:415px) {
     .text1 {
-        font-size: 75%;
-        text-align: justify;
-    }
 
-    .AboutMe input {
-        width: 75%;
-        font-size: 75%;
-    }
-}
-
-@media (max-width:1385px) {
-    .text1 {
-        
-        
-        text-align:justify;
+        font-size: 85%;
     }
 
     .text1_1 {
 
-        display: none;
+        font-size: 85%;
     }
 
     .AboutMe input {
-        width: 75%;
-        
-    }
-    
-}
+        font-size: 85%;
 
-@media (max-width:1285px) {
-    .text1 {
-       
-        width: 50%;
-        font-size: 50%;
-        text-align:justify;
-        
     }
-     .AboutMe input {
-         margin: inherit;
-        width: 65%;
-        font-size: 65%;
-    }
-}
 
+}
 
 
 
@@ -346,8 +316,10 @@ main {
 .text1 {
 
     position: relative;
+    margin-top: 30px;
+    text-align: justify;
 
-    margin: 20px 550px 0px 600px;
+
 
     /* -webkit-animation: fotka 5s ease-in forwards;
     -o-animation: fotka 5s ease-in forwards;
@@ -359,6 +331,9 @@ main {
 .text1_1 {
 
     position: relative;
+    text-align: justify;
+
+
 
 
     /*   -webkit-animation: fotka 5s ease-in forwards;
@@ -419,7 +394,7 @@ main {
     font-weight: 600;
     font-size: 25px;
     color: #263244;
-   /* -webkit-animation: aboutme 3s ease forwards;
+    /* -webkit-animation: aboutme 3s ease forwards;
     -o-animation: aboutme 3s ease forwards;
     animation: aboutme 3s ease forwards;
 */
@@ -430,14 +405,21 @@ main {
     margin-top: 30px;
 }
 
-.nout2 {
-    
+.IcanDo {
+    display: flex;
+
 }
 
 .nout1 {
-     
-    display: flex;
-    
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+
     /* opacity: 0;
     -webkit-animation: fotka 5s forwards;
     -o-animation: fotka 5s forwards;
@@ -449,17 +431,22 @@ main {
 
 .nout1 h3 {
     color: #cf7600;
-    display: flex;
-   flex-wrap: wrap;
-   
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .znak1 {
-     
-    display: flex;
-    
-    
-   /* opacity: 0;
+
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+
+    /* opacity: 0;
     -webkit-animation: fotka 5s forwards;
     -o-animation: fotka 5s forwards;
     animation: fotka 5s forwards;
@@ -470,17 +457,22 @@ main {
 
 .znak1 h3 {
     color: #cf7600;
-    display: flex;
+
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    
+
+
 }
 
 
 .raketa1 {
-     
-    display: flex;
-    
-   /* opacity: 0;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    /* opacity: 0;
     -webkit-animation: fotka 5s forwards;
     -o-animation: fotka 5s forwards;
     animation: fotka 5s forwards;
@@ -492,18 +484,22 @@ main {
 
 .raketa1 h3 {
     color: #cf7600;
-    display: flex;
+    align-items: center;
+    justify-content: center;
+
     flex-wrap: wrap;
-    
+
+
 }
 
 .gramofon1 {
-     
-    display: flex;
-   
-   
-    
-   /* opacity: 0;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    /* opacity: 0;
     -webkit-animation: fotka 5s forwards;
     -o-animation: fotka 5s forwards;
     animation: fotka 5s forwards;
@@ -515,8 +511,11 @@ main {
 
 .gramofon1 h3 {
     color: #cf7600;
-    display: flex;
+
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .Cases {
