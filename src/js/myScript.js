@@ -1,23 +1,66 @@
-$(document).ready(function(){
-                  
-  let option = {treshold:[0.2]};
+$(document).ready(function () {
+
+  let options = {treshold:[0.5]};
     let observer = new IntersectionObserver(onEntry,options);
-    let elements = $('.element-animation');
-    animates.each ((i,el) => {
-        observer.observe(el);
-    });              
+    let elements = $('.element-animation,aboutMePhoto');
+    elements.each((i,el) => {
+        observer.observe(el);  
     });
+
+    
+    
+     $(window).scroll(() => {
+        let scrollDistance = $(window).scrollTop();
+
+        $(".section").each((i, el) => {
+
+            if ($(el).offset().top - $("nav").outerHeight() <= scrollDistance) {
+                $("nav a").each((e, el) => {
+                    if ($(el).hasClass("active")) {
+                        $(el).removeClass("active");
+                    }
+                });
+                $('nav li:eq(' + i + ')').find('a').addClass('active');
+            }
+        });
+    });
+    
+    $(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
+    
+});
+
+
 function onEntry (entry){
     entry.forEach (change => {
         if(change.isIntersecting){
             change.target.classList.add('show-animation');
         }
     });
+};
+/*$('a[href^="#"]').click(function () {
+    let valHref = $(this).attr("href");
+    $('html,body').animate({
+        scrollTop: $(valHref).offset().top - 30 + "px"
+    });
+});
+*/
+
+$(document).ready(function () {
+    showStartModal();
+});
+
+function showStartModal() {
+    setTimeout(function () {
+        $('exampleModal').modal('show');
+    }, 15000);
 }
 
-
+/*
+$(document).ready(function(){
     
-$(window).scroll(() => {
+    $(window).scroll(() => {
     let scrollDistance = $(window).scrollTop();
     
     $(".section").each((i,el) => {
@@ -33,10 +76,28 @@ $(window).scroll(() => {
     });
     
     });
+                  
+  let options = {treshold:[0.2]};
+    let observer = new IntersectionObserver(onEntry,options);
+    let elements = $('.element-animation');
+    elements.each ((i,el) => {
+        observer.observe(el);
+    });              
+    });
+function onEntry (entry){
+    entry.forEach (change => {
+        if(change.isIntersecting){
+            change.target.classList.add('show-animation');
+        }
+    });
+}
+
+
     
 
+    
 
-
+/*
 let siteAnswer, designAnwer, adaptiveAnswer;
 let calculator = {
     price:[
@@ -79,13 +140,4 @@ function getAnswers() {
 }
 getAnswers();
 
-
-
-
-
-
-
-
-
-
-
+*/
