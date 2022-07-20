@@ -1,12 +1,62 @@
-$(document).ready(function () {
+$(document).ready(function(){
+   
+    //Прелодер
+    $(".loaderArea").css("display","none"); 
+    
+     //Калькулятор    
+    function calculate(){
+       let sum = parseInt($("#selectSite option:selected").val()) + parseInt($("#selectDesign option:selected").val()) + parseInt($("#selectAdaptive option:selected").val());
+       let days = parseInt($("#selectSite option:selected").attr("days")) + parseInt($("#selectDesign option:selected").attr("days")) + parseInt($("#selectAdaptive option:selected").attr("days"));
+        $(".price .digit").text(sum);
+        $(".days .digit").text(days);
+    }
+    calculate();
+    $("select").on("change", function(){
+       calculate();
+    });
+});
+ //Плавный скроллинг к якорным ссылкам
+      $("a[href^='#']").click(function(){
+                let _href = $(this).attr("href");
+                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                return false;
+        });
 
+//отложенная анимация при скроле
   let options = {treshold:[0.5]};
     let observer = new IntersectionObserver(onEntry,options);
     let elements = $('.element-animation,aboutMePhoto');
     elements.each((i,el) => {
         observer.observe(el);  
     });
+    
 
+ //Бегающие цифры статистики
+     let optionsStat = {
+            threshold: [0.5]
+        };
+        let observerStat = new IntersectionObserver(onEntryStat, optionsStat);
+        let elementsStat = $('.statAnimation');
+
+        elementsStat.each((i, el) => {
+            observerStat.observe(el);
+        });
+
+
+        function onEntryStat(entry) {
+            entry.forEach(change => {
+                if (change.isIntersecting) {
+                    if(!$('.statAnimation').hasClass("done")){
+                        $('.statAnimation').addClass("done");
+                        $('.statAnimation').spincrement({
+                         thousandSeparator: "",
+                         duration: 3000
+                    });
+                  }
+                }
+            });
+        }
+    
     
     
      $(window).scroll(() => {
@@ -27,7 +77,7 @@ $(document).ready(function () {
     
     $(document).ready(function() {
   $('.image-link').magnificPopup({type:'image'});
-});
+
     
 });
 
@@ -39,13 +89,8 @@ function onEntry (entry){
         }
     });
 };
-/*$('a[href^="#"]').click(function () {
-    let valHref = $(this).attr("href");
-    $('html,body').animate({
-        scrollTop: $(valHref).offset().top - 30 + "px"
-    });
-});
-*/
+ //Плавный скроллинг к якорным ссылкам
+
 
 $(document).ready(function () {
     showStartModal();
@@ -57,7 +102,7 @@ function showStartModal() {
     }, 15000);
 }
 
-/*
+
 $(document).ready(function(){
     
     $(window).scroll(() => {

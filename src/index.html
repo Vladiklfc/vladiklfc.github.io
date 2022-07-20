@@ -15,12 +15,18 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fotorama.css">
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/myAnimation.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
+    <div class="loaderArea">
+        <svg>
+            <circle cx="70" cy="70" r="70"> </circle>
+        </svg>
+    </div>
     <header>
 
         <nav>
@@ -161,23 +167,62 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active image-link" href="img/photo.png" data-bs-interval="10000">
                             <img src="img/photo.png" class="d-block w-100" alt="...">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-3 col-lg-2 description_left">
+                                    <h3>Client:</h3>
+                                    <p>it компания</p>
+                                    <h3>Website:</h3>
+                                    <p>https://somedomain.ru</p>
+                                    <a href="#">Visit Live Site</a>
+                                </div>
+                                <div class="col-12 col-md-9 description_right mt-3 mt-md-0">
+                                    <h4>Проект открытого кода в сфере it</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis, debitis a ipsa fugit ad architecto adipisci obcaecati. Quos magnam, hic vero omnis numquam tempore laborum, similique tempora consequatur debitis a iure eaque. Vel cupiditate, maxime! Nemo adipisci quia velit.</p>
+                                </div>
+                            </div>
+
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Мой первый проект</h5>
-                                <p>Заказ был сделан хаккерам для открытого кода =) </p>
+
                             </div>
                         </div>
                         <div class="carousel-item image-link" href="img/sait2.jpg" data-bs-interval="2000">
                             <img src="img/sait2.jpg" class="d-block w-100" alt="...">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-3 col-lg-2 description_left">
+                                    <h3>Client:</h3>
+                                    <p>Юридическая компания</p>
+                                    <h3>Website:</h3>
+                                    <p>https://somedomain.ru</p>
+                                    <a href="#">Visit Live Site</a>
+                                </div>
+                                <div class="col-12 col-md-9 description_right mt-3 mt-md-0">
+                                    <h4>Сайт-визитка</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis, debitis a ipsa fugit ad architecto adipisci obcaecati. Quos magnam, hic vero omnis numquam tempore laborum, similique tempora consequatur debitis a iure eaque. Vel cupiditate, maxime! Nemo adipisci quia velit.</p>
+                                </div>
+                            </div>
+
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Лендинг</h5>
-                                <p>Юридический сайт визитка</p>
+
                             </div>
                         </div>
                         <div class="carousel-item image-link" href="img/sait3.jpg">
                             <img src="img/sait3.jpg" class="d-block w-100" alt="...">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-3 col-lg-2 description_left">
+                                    <h3>Client:</h3>
+                                    <p>Финансовая компания</p>
+                                    <h3>Website:</h3>
+                                    <p>https://somedomain.ru</p>
+                                    <a href="#">Visit Live Site</a>
+                                </div>
+                                <div class="col-12 col-md-9 description_right mt-3 mt-md-0">
+                                    <h4>Адаптивный дизайн на все устройства</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis, debitis a ipsa fugit ad architecto adipisci obcaecati. Quos magnam, hic vero omnis numquam tempore laborum, similique tempora consequatur debitis a iure eaque. Vel cupiditate, maxime! Nemo adipisci quia velit.</p>
+                                </div>
+                            </div>
+
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Адаптивный дизайн</h5>
-                                <p>Тяжелый проект дался нелегко, но мы справились!</p>
+
                             </div>
                         </div>
                     </div>
@@ -193,60 +238,47 @@
 
 
 
-                <div class="row justify-content-between">
-                    <div class="col-12 col-md-3 col-lg-2 description_left">
-                        <h3>Client:</h3>
-                        <p>Какая-то компания</p>
-                        <h3>Website:</h3>
-                        <p>https://somedomain.ru</p>
-                        <a href="#">Visit Live Site</a>
-                    </div>
-                    <div class="col-12 col-md-9 description_right mt-3 mt-md-0">
-                        <h4>Название проекта</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis, debitis a ipsa fugit ad architecto adipisci obcaecati. Quos magnam, hic vero omnis numquam tempore laborum, similique tempora consequatur debitis a iure eaque. Vel cupiditate, maxime! Nemo adipisci quia velit.</p>
-                    </div>
-                </div>
 
 
             </div>
         </section>
 
-        <section class="calculator">
+        <section id="price" class="calculator section">
             <div class="calculator_container container">
                 <h2>Расчет стоимости</h2>
                 <div class="calculator_inner">
                     <h3>Тип Сайта</h3>
-                    <select class="mySelect" name="type" id="typeSite">
-                        <option value="1" selected disabled>Выберите пункт</option>
-                        <option value="2">Сайт-визитка</option>
-                        <option value="3">Корпоративный сайт</option>
-                        <option value="4">Интернет-магазин</option>
+                    <select id="selectSite" class="mySelect" name="type" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="2000" days="2">Сайт-визитка</option>
+                        <option value="5000" days="3">Корпоративный сайт</option>
+                        <option value="8000" days="6">Интернет-магазин</option>
                     </select>
                     <h3>Дизайн</h3>
-                    <select class="mySelect" name="type" id="typeSite">
-                        <option value="1" selected disabled>Выберите пункт</option>
-                        <option value="2">Шаблонный</option>
-                        <option value="3">Уникальный</option>
-                        <option value="4">WOW-Дизайн</option>
+                    <select id="selectDesign" class="mySelect" name="type" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="2000" days="2">Шаблонный</option>
+                        <option value="8000" days="7">Уникальный</option>
+                        <option value="12000" days="10">WOW-Дизайн</option>
                     </select>
                     <h3>Адаптивность</h3>
-                    <select class="mySelect" name="type" id="typeSite">
-                        <option value="1" selected disabled>Выберите пункт</option>
-                        <option value="2">Только ПК</option>
-                        <option value="3">Только мобильный сайт</option>
-                        <option value="4">ПК + Мобильный</option>
+                    <select id="selectAdaptive" class="mySelect" name="type" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="2000" days="2">Только ПК</option>
+                        <option value="2000" days="2">Только мобильный сайт</option>
+                        <option value="3000" days="4">ПК + Мобильный</option>
                     </select>
                     <hr>
                     <div class="calculator_footer">
-                        <div class="days" id="days">
+                        <div class="days">
                             <p class="text">Сроки</p>
-                            <p class="digit" id="digit">0</p>
+                            <p class="digit">0</p>
                             <div class="clear"></div>
                         </div>
 
-                        <div class="price" id="price">
+                        <div class="price">
                             <p class="text">Стоимость</p>
-                            <p class="digit" id="digit">0</p>
+                            <p class="digit">0</p>
                             <div class="clear"></div>
                         </div>
                         <div class="row justify-content-center text-center">
@@ -266,54 +298,72 @@
 
                     <div class="col-12 col-sm-6 col-md-3  statistic_item ">
                         <img class=" element-animation animate__animated animate__flip" src="img/logo1.png" alt="">
-                        <h3>120</h3>
+                        <h3 class="statAnimation">120</h3>
                         <p>Счастливых клиентов</p>
                     </div>
                     <div class=" col-12 col-sm-6 col-md-3  statistic_item mt-5 mt-sm-0">
                         <img class="element-animation animate__animated animate__flip" src="img/logo2.png" alt="">
-                        <h3>4600</h3>
+                        <h3 class="statAnimation">4600</h3>
                         <p>Часов работы</p>
                     </div>
                     <div class="col-12 col-sm-6 col-md-3  statistic_item mt-5 mt-md-0">
                         <img class="element-animation animate__animated animate__flip" src="img/logo3.png" alt="">
-                        <h3>340</h3>
+                        <h3 class="statAnimation">340</h3>
                         <p>Проектов завершено</p>
                     </div>
                     <div class="col-12 col-sm-6 col-md-3  statistic_item mt-5 mt-md-0">
                         <img class="element-animation animate__animated animate__flip" src="img/logo4.png" alt="">
-                        <h3>23</h3>
+                        <h3 class="statAnimation">23</h3>
                         <p>Наград получено</p>
                     </div>
                 </div>
             </div>
         </section>
+        
         <section class=" section " class=" section reviews" id="reviews">
             <div class="reviews_container container">
                 <h2>Отзывы</h2>
                 <hr>
                 <div class="row justify-content-center text-center">
                     <div class="review col-12 col-md-8">
-                        <img class=" element-animation animate__animated animate__fadeInLeftBig image-link" src="img/mihail-off.png" href="img/mihail.png" alt="">
-                        <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cum totam saepe laborum quae tenetur blanditiis laboriosam asperiores repellat quas!</p>
-                        <p class="review_author"> <span>Михаил</span>, Ген. Директор ПАО "Газпром"</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center">
-                    <div class="review col-12 col-md-8">
-                        <div class="fotorama " data-keyboard="true" data-fit="scaledown">
-                            <img class=" element-animation animate__animated animate__fadeInLeftBig image-link" src="img/mihail-off.png" href="img/mihail.png" alt="">
-                            <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cum totam saepe laborum quae tenetur blanditiis laboriosam asperiores repellat quas!</p>
-                            <p class="review_author"> <span>Михаил</span>, Ген. Директор ПАО "Газпром"</p>
-                            <img src="img/rewius2.jpg">
-                            <p class="review_text">Заказал сайт для Юр.услуг, остался очень доволен!</p>
-                            <p class="review_author"> <span>Федор</span>, Юрист!</p>
-                            <img src="img/rewius3.jpg">
-                            <p class="review_text">Занимаемся финансами с 2008 года, обращайтесь все к нам по нашему крутому сайту, который запилил нам Андерй Браун!</p>
-                            <p class="review_author"> <span>Раиса</span>, Научу выводить денежные средства в топ!</p>
-
+                        <div id="carouselReview" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/mihail.png" alt="">
+                                    <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cum totam saepe laborum quae tenetur blanditiis laboriosam asperiores repellat quas!</p>
+                                    <p class="review_author"> <span>Михаил</span>, Ген. Директор ПАО "Газпром"</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/rewius2.jpg" alt="">
+                                    <p class="review_text">Заказал сайт для Юр.услуг, остался очень доволен!</p>
+                                    <p class="review_author"> <span>Федор</span>, Ген. Директор ПАО "Газпром"</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/rewius3.jpg" alt="">
+                                    <p class="review_text">Занимаемся финансами с 2008 года, обращайтесь все к нам по нашему крутому сайту, который запилил нам Андерй Браун!</p>
+                                    <p class="review_author"> <span>Раиса</span>, Научу выводить денежные средства в топ!</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselReview" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselReview" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
                         </div>
+
                     </div>
                 </div>
+            </div>
+
+
         </section>
         <section class=" section contacts" id="contacts">
             <div class="contacts_container container">

@@ -601,3 +601,22 @@ color: #d17700;
         margin-left: 38%;
     }
 }
+li .active{
+    color: #fa8b28 !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	height: 70%;
+}
+
+#carouselReview .carousel-indicators{
+    margin-bottom: -10px;
+}
+
+#carouselReview .carousel-indicators [data-bs-target]{
+    background-color: #ff6c00;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+   background-color: #ff6c00; 
+}
