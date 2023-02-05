@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Это моя первая страница...">
+    <meta name="author" content="Andrey">
+    <meta name="robots" content="all">
+    <meta property="og:title" content="Это моя первая страница...">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Влад Домарев - Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fotorama.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/myAnimation.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <div class="loaderArea">
+        <svg>
+            <circle cx="70" cy="70" r="70"> </circle>
+        </svg>
+    </div>
+    <header>
+
+        <nav>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-3 col-lg-3 col-7 ">
+                        <div class="logo">Влад Домарев</div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-7 col-lg-9 offset-xxl-4 offset-xl-2 px-0 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#aboutme">Обо мне</a></li>
+                                <li><a href="#skills">Услуги</a></li>
+                                <li><a href="#portfolio">Кейсы</a></li>
+                                <li><a href="#statistic">Прайс</a></li>
+                                <li><a href="#reviews">Отзывы</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex justify-content-center flex-column align-items-end d-lg-none">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Меню
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги action</a></li>
+                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main image-link" href="img/curs3.jpg">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6 mt-5 pt-5">
+                        <div class="title__container mt-5">
+                            <h1>Привет <br> Я, Влад Домарев</h1>
+                            <h4>Начинающий фронтенд-разработчик</h4>
+                            <input type="submit" value="Обо мне">
+                            <input type="submit" value="Мои кейсы">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class=" section about_me" id="aboutme">
+            <div class="about_me_container container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10 col-md-8">
+                        <h2>Обо мне</h2>
+                        <hr>
+                        <img class=" element-animation aboutMePhoto" src="img/myphoto.png" href="img/myphoto.png" alt="">
+                        <p class="firstText"> Мне 29 лет, стремлюсь стать достойным фронтенд разработчиком.Знаком с адаптивной версткой, резиновой версткой, pixelPerfect версткой.</p>
+                        <p class="secondText">Изучаю техническую литературу, необходим комерчесакий опыт, для реализации поставленных задач. Стек не большой, но все же: Java Script, JQUERY, PHP, HTML5, CSS3. </p>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Забирай скидку на первый заказ!
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Специальная акция</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Только до конца этого месяца ты можешь получить скидку на первый заказ в размере 20%
+                                    </div>
+                                    <form action="php/mail.php" method="post">
+                                        <div class="lg-6">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" name="user_email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">Введите свой e-mail</div>
+                                        </div>
+                                        <div class="lg-6">
+                                            <label for="exampleInputPassword1" class="form-label">Телефон</label>
+                                            <input type="phone" name="user_phone"   class="form-control" id="inputTel">
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="submit" class="btn btn-primary">Получить скидку</button>
+                                    </div>
+                                    </form>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#">Скачать резюме</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class=" section  skills" id="skills">
+
+            <div class="skills_container container">
+                <h2>Что я умею</h2>
+                <hr>
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 col-sm-6 col-md-3 skills_item"> <img class="wow animate__animated animate__wobble" src="img/pc.png" alt="">
+                        <h3>Веб-дизайн</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vel.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 skills_item mt-5 mt-sm-0"><img class=" wow animate__animated animate__wobble" src="img/log.png" alt="">
+                        <h3>Разработка</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vel.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 skills_item mt-5 mt-md-0"><img class=" wow animate__animated animate__wobble" src="img/log2.png" alt="">
+                        <h3>СЕО оптимизация</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vel.</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 skills_item mt-5 mt-md-0"><img class="wow  animate__animated animate__wobble" src="img/log3.png" alt="">
+                        <h3>Маркетинг</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, vel.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class=" section portfolio" id="portfolio">
+            <div class="portfolio_container container">
+                <h2>Кейсы</h2>
+                <hr>
+                <p class="portfolio_subscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ea cum error commodi at obcaecati consequuntur in pariatur!</p>
+
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators ">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active image-link" href="img/curs1.jpg" data-bs-interval="10000">
+                            <img src="img/curs1.jpg" class="d-block w-100" alt="...">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-3 col-lg-2 description_left">
+                                    <h3>Client:</h3>
+                                    <p>it компания</p>
+                                    <h3>Website:</h3>
+                                    <p>https://somedomain.ru</p>
+                                    <a href="#">Visit Live Site</a>
+                                </div>
+                                <div class="col-12 col-md-9 description_right mt-3 mt-md-0">
+                                    <h4>Проект открытого кода в сфере it</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis, debitis a ipsa fugit ad architecto adipisci obcaecati. Quos magnam, hic vero omnis numquam tempore laborum, similique tempora consequatur debitis a iure eaque. Vel cupiditate, maxime! Nemo adipisci quia velit.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item image-link" href="img/curs2.jpg" data-bs-interval="2000">
+                            <img src="img/curs2.jpg" class="d-block w-100" alt="...">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-3 col-lg-2 description_left">
+                                    <h3>Client:</h3>
+                                    <p>Юридическая компания</p>
+                                    <h3>Website:</h3>
+                                    <p>https://somedomain.ru</p>
+                                    <a href="#">Visit Live Site</a>
+                                </div>
+                                <div class="col-12 col-md-9 description_right mt-3 mt-md-0">
+                                    <h4>Сайт-визитка</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis, debitis a ipsa fugit ad architecto adipisci obcaecati. Quos magnam, hic vero omnis numquam tempore laborum, similique tempora consequatur debitis a iure eaque. Vel cupiditate, maxime! Nemo adipisci quia velit.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                        <div class="carousel-item image-link" href="img/curs3.jpg">
+                            <img src="img/curs3.jpg" class="d-block w-100" alt="...">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-3 col-lg-2 description_left">
+                                    <h3>Client:</h3>
+                                    <p>Финансовая компания</p>
+                                    <h3>Website:</h3>
+                                    <p>https://somedomain.ru</p>
+                                    <a href="#">Visit Live Site</a>
+                                </div>
+                                <div class="col-12 col-md-9 description_right mt-3 mt-md-0">
+                                    <h4>Адаптивный дизайн на все устройства</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis, debitis a ipsa fugit ad architecto adipisci obcaecati. Quos magnam, hic vero omnis numquam tempore laborum, similique tempora consequatur debitis a iure eaque. Vel cupiditate, maxime! Nemo adipisci quia velit.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-caption d-none d-md-block">
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+        <section id="price" class="calculator section">
+            <div class="calculator_container container">
+                <h2>Расчет стоимости</h2>
+                <div class="calculator_inner">
+                    <h3>Тип Сайта</h3>
+                    <select id="selectSite" class="mySelect" name="type" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="2000" days="2">Сайт-визитка</option>
+                        <option value="5000" days="3">Корпоративный сайт</option>
+                        <option value="8000" days="6">Интернет-магазин</option>
+                    </select>
+                    <h3>Дизайн</h3>
+                    <select id="selectDesign" class="mySelect" name="type" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="2000" days="2">Шаблонный</option>
+                        <option value="8000" days="7">Уникальный</option>
+                        <option value="12000" days="10">WOW-Дизайн</option>
+                    </select>
+                    <h3>Адаптивность</h3>
+                    <select id="selectAdaptive" class="mySelect" name="type" id="typeSite">
+                        <option value="0" days="0" selected disabled>Выберите пункт</option>
+                        <option value="2000" days="2">Только ПК</option>
+                        <option value="2000" days="2">Только мобильный сайт</option>
+                        <option value="3000" days="4">ПК + Мобильный</option>
+                    </select>
+                    <hr>
+                    <div class="calculator_footer">
+                        <div class="days">
+                            <p class="text">Сроки</p>
+                            <p class="digit">0</p>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="price">
+                            <p class="text">Стоимость</p>
+                            <p class="digit">0</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="row justify-content-center text-center">
+                            <div class="col-12 ">
+                                <button class="mx-auto">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" section statistic" id="statistic">
+            <div class="statistic_container container">
+                <h2>Немного статистики</h2>
+                <hr>
+                <div class="row justify-content-center text-center">
+
+                    <div class="col-12 col-sm-6 col-md-3  statistic_item ">
+                        <img class=" element-animation animate__animated animate__flip" src="img/logo1.png" alt="">
+                        <h3 class="statAnimation">120</h3>
+                        <p>Счастливых клиентов</p>
+                    </div>
+                    <div class=" col-12 col-sm-6 col-md-3  statistic_item mt-5 mt-sm-0">
+                        <img class="element-animation animate__animated animate__flip" src="img/logo2.png" alt="">
+                        <h3 class="statAnimation">4600</h3>
+                        <p>Часов работы</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3  statistic_item mt-5 mt-md-0">
+                        <img class="element-animation animate__animated animate__flip" src="img/logo3.png" alt="">
+                        <h3 class="statAnimation">340</h3>
+                        <p>Проектов завершено</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3  statistic_item mt-5 mt-md-0">
+                        <img class="element-animation animate__animated animate__flip" src="img/logo4.png" alt="">
+                        <h3 class="statAnimation">23</h3>
+                        <p>Наград получено</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" section " class=" section reviews" id="reviews">
+            <div class="reviews_container container">
+                <h2>Отзывы</h2>
+                <hr>
+                <div class="row justify-content-center text-center">
+                    <div class="review col-12 col-md-8">
+                        <div id="carouselReview" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselReview" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/mihail.png" alt="">
+                                    <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cum totam saepe laborum quae tenetur blanditiis laboriosam asperiores repellat quas!</p>
+                                    <p class="review_author"> <span>Михаил</span>, Ген. Директор ПАО "Газпром"</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/rewius2.jpg" alt="">
+                                    <p class="review_text">Заказал сайт для Юр.услуг, остался очень доволен!</p>
+                                    <p class="review_author"> <span>Федор</span>, Ген. Директор ПАО "Газпром"</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/rewius3.jpg" alt="">
+                                    <p class="review_text">Занимаемся финансами с 2008 года, обращайтесь все к нам по нашему крутому сайту, который запилил нам Андерй Браун!</p>
+                                    <p class="review_author"> <span>Раиса</span>, Научу выводить денежные средства в топ!</p>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselReview" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselReview" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class=" section contacts" id="contacts">
+            <div class="contacts_container container">
+                <h2>Мои Контакты</h2>
+                <hr>
+                <p class="contacts_subscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ea cum error commodi at obcaecati!</p>
+                <div class="contacts_data row justify-content-center text-center">
+                    <div class="contacts_data_item col-12 col-md-4 col-lg-3">
+                        <img src="img/geo.png" alt="">
+                        <p>Курск, <br> Проспект Дружбы д.22</p>
+                    </div>
+                    <div class="contacts_data_item col-12 col-md-4 col-lg-3 mt-4 mt-md-0">
+                        <img src="img/mail.png" alt="">
+                        <p>vladiklfc@yandex.ru</p>
+                    </div>
+                    <div class="contacts_data_item col-12 col-md-4 col-lg-3 mt-4 mt-md-0">
+                        <img src="img/tel.png" alt="">
+                        <p>+7-906-693-21-11</p>
+                    </div>
+                </div>
+
+                <h3>Оставьте мне сообщение</h3>
+                <form class=" wow  animate__animated animate__zoomInDown" action="#">
+                    <div class="contacts_inputs row justify-content-center text-center">
+                        <div class="col-12 col-sm-4 "><input type="text" placeholder="Имя"></div>
+                        <div class="col-12 col-sm-4 "><input class="secondInput " type="text" placeholder="Email"></div>
+
+
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-sm-8">
+                            <textarea placeholder="Сообщение" name="message" id="messageText" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Отправить">
+                </form>
+                <div class="contacts_social row row justify-content-center text-center">
+                    <div class="col-4 col-md-1 ">
+                        <a href="#"><img src="img/fb.png" alt=""></a>
+                    </div>
+                    <div class="col-4 col-md-1 ">
+                        <a href="#"><img src="img/tvit.png" alt=""></a>
+                    </div>
+                    <div class="col-4 col-md-1 ">
+                        <a href="#"><img src="img/bool.png" alt=""></a>
+                    </div>
+                    <div class="col-4 col-md-1 mt-5 mt-md-0">
+                        <a href="#"><img src="img/inst.png" alt=""></a>
+                    </div>
+                    <div class="col-4 col-md-1 mt-5 mt-md-0">
+                        <a href="#"><img src="img/kat.png" alt=""></a>
+                    </div>
+
+                    <div class="col-4 col-md-1 mt-5 mt-md-0">
+                        <a href="#"><img src="img/in.png" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.6125327949326!2d36.13067231613182!3d51.74012197967403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f02f7901c7f49%3A0xf53f526111bf1dab!2z0L_RgC4g0JTRgNGD0LbQsdGLLCAyMiwg0JrRg9GA0YHQuiwg0JrRg9GA0YHQutCw0Y8g0L7QsdC7LiwgMzA1MDQ4!5e0!3m2!1sru!2sru!4v1675617886782!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+
+        <div class="footer">
+            <div class="footer_container">
+                <p>Copyright 2023 Влад Домарев. Design by Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/spin.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/mascedinput.min.js"></script>>
+    <script src="js/myScript.js"></script>
+
+</body>
+
+</html>
