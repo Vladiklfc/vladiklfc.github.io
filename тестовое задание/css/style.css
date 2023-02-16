@@ -1,0 +1,252 @@
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/poppins-v20-latin-regular.woff') format('woff');
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/poppins-v20-latin-500.woff') format('woff');
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/poppins-v20-latin-600.woff') format('woff');
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'),
+        /* Chrome 36+, Opera 23+, Firefox 39+ */
+        url('../fonts/poppins-v20-latin-700.woff') format('woff');
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #000;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 100%;
+    max-height: 901px;
+    margin: 0 auto;
+}
+
+/* Стили header */
+
+.header {
+    top: 55px;
+    left: 375px;
+    width: 100%;
+}
+
+.header_wrapper {
+    position: fixed;
+    left: 375px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.header_link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 45px;
+}
+
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+    opacity: 0.75;
+}
+
+.header_link_tell {
+    background: url(../img/intro-bg.jpg) no-repeat center;
+
+}
+
+.header_item {
+    margin-right: 40px;
+
+}
+
+/* Стили intro */
+
+.intro {
+    min-height: 100vh;
+    background: url(../img/intro-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 320px;
+}
+.info_time{
+    margin-left: 375px;
+}
+
+.intro_subtitle {
+    max-width: 366px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.intro_title {
+    max-width: 1168px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 88px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.reserve_table {
+    padding: 38px 64px;
+    color: #fff;
+    width: 270px;
+    height: 100px;
+    left: 375px;
+    top: 536px;
+    background: #3A4574;
+    margin-top: 75px;
+}
+
+.reserve_table:hover,
+.reserve_table:focus,
+.reserve_table:active {
+    background-color: #121f58;
+}
+
+/*Стили woensdag  */
+.woensdag {
+    width: 100%;
+    max-height: auto;
+    padding-top: 80px;
+    background-color: #fff;
+    position: relative;
+}
+
+.woensdag_wrappers {
+    margin-left: 375px;
+    position: relative;
+}
+.woensdag::after{
+    display: block;
+    content: '';
+    width: 469px;
+    height: 3px;
+    border-color: #E7E7E7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.woensdag_wrappers hr{
+    position: absolute;
+    text-align: center;
+    border: 1px solid #000;
+    background: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+}
+h2.woensdag_wrapper {
+    position: absolute;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+span.woensdag_wrapper{
+    
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+.photo{
+    
+}
+.wijncaart{
+    width: 1920px;
+    height: 782px;
+    background-color: #3A4574;
+}
+h2.sl_wincart{
+    width: 600;
+    size: 36px;
+    height: 40px;
+    align-content: center;
+    color: #D3B47F;    
+}
+h4.sl_wincart{
+    width: 400;
+    size: 16px;
+    height: 40px;
+    align-content: center;
+    color: #fff;   
+}
+h3.sl_wincart{
+    width: 600;
+    size: 24px;
+    height: 40px;
+    align-content: center;
+    color: #D3B47F;
+}
